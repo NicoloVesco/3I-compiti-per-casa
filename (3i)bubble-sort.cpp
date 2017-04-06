@@ -14,7 +14,6 @@ int main(){
     cout << endl;
     int b[] = {-3,-1,0,7,4,5,7,8,10,1,9};
     bubble_sort(b, dim);
-  // stampa(b, dim);
     cout << endl;
     return 0;
 }
@@ -39,9 +38,9 @@ void bubble_sort(int v[], int dim){
         cout<<"k= "<<k<<" "<<endl;
         cout<<"sup= "<<sup<<" "<<endl;
         stampa(v,dim);
-    }
-    }
-    }
+          }
+        }
+      }
 
 
 void selection_sort(int v[], int dim){
@@ -49,7 +48,7 @@ void selection_sort(int v[], int dim){
     for (int i = 0; i < dim-1; i++){
         for (int j = i+1; j < dim; j++){
             if (v[i] > v[j]){
-                comodo = v[i];// a cosa serve comodo?
+                comodo = v[i];
                 v[i] = v[j];
                 v[j] = comodo;
             }
@@ -63,8 +62,3 @@ void stampa(int v[], int dim){
         cout << v[i] << "  ";
     }
 }
-
-
-
-
-
